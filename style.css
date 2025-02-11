@@ -13,6 +13,7 @@ body {
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background-color: rgba(51, 51, 51, 0.8); /* dark gray with opacity */
     color: white;
@@ -26,19 +27,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;  /* White text color for headers */
 }
 
-/* Additional custom styles for h1 for better control */
 h1 {
-    font-size: 3em;  /* You can adjust the size of your main title here */
+    font-size: 3em;  /* Main title font size */
 }
 
 h2 {
-    font-size: 2.5em;  /* Subtitle size */
+    font-size: 2.5em;  /* Subtitle font size */
 }
 
 h3 {
-    font-size: 2em;  /* Smaller header size */
+    font-size: 2em;  /* Smaller header font size */
 }
-
 
 /* Layout Styles */
 .container {
