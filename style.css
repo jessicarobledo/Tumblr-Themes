@@ -47,15 +47,19 @@ h3 {
 
 .content {
     flex: 3; /* Main content takes more space */
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+    color: #333; /* Dark text color for readability */
     padding: 20px;
     margin-right: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
 }
 
 .sidebar {
     flex: 1; /* Sidebar takes less space */
-    background-color: #f8f8f8;
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+    color: #333; /* Dark text color for readability */
     padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
 }
 
 /* Navigation Bar Styling */
