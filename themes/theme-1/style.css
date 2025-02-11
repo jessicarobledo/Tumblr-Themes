@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #3d2a4d; /* Dark ashy purple fallback */
+    color: #ffffff; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout Styles */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.content {
+    flex: 3; /* Main content takes more space */
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1; /* Sidebar takes less space */
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content and sidebar on smaller screens */
+    }
+
+    .content {
+        margin-right: 0;
+    }
+}
