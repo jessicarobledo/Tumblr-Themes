@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Lato', sans-serif;
@@ -11,11 +14,31 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* dark gray with opacity */
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;  /* Apply Orbitron to all headings */
+    color: #fff;  /* White text color for headers */
+}
+
+/* Additional custom styles for h1 for better control */
+h1 {
+    font-size: 3em;  /* You can adjust the size of your main title here */
+}
+
+h2 {
+    font-size: 2.5em;  /* Subtitle size */
+}
+
+h3 {
+    font-size: 2em;  /* Smaller header size */
+}
+
 
 /* Layout Styles */
 .container {
