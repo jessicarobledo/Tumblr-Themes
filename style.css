@@ -8,7 +8,7 @@ body {
                 no-repeat center center fixed;
     background-size: cover;
     background-color: #3d2a4d; /* Dark ashy purple fallback */
-    color: #ffffff; /* Default text color */
+    color: white; /* Text color */
     margin: 0;
     padding: 0;
 }
