@@ -98,6 +98,7 @@ nav ul li a {
     font-size: 16px; /* Adjust size if needed */
     font-weight: bold; /* Make it bold if desired */
     letter-spacing: 1px; /* Adds a little spacing between letters */
+    text-decoration: none; /* Removes the underline */
     color: white; /* Ensure visibility */
 }
 @keyframes glitch {
