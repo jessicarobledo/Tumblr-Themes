@@ -101,15 +101,16 @@ nav ul li a {
     color: white; /* Ensure visibility */
 }
 @keyframes glitch {
-    0% { text-shadow: 2px 2px #ff0000, -2px -2px #00ffea; }
-    50% { text-shadow: -2px -2px #ff0000, 2px 2px #00ffea; }
-    100% { text-shadow: 2px -2px #ff0000, -2px 2px #00ffea; }
+    0% { text-shadow: 3px 3px #ff4ddb, -3px -3px #00eaff; }
+    50% { text-shadow: -3px -3px #ff4ddb, 3px 3px #00eaff; }
+    100% { text-shadow: 3px -3px #ff4ddb, -3px 3px #00eaff; }
 }
 
 nav ul li a:hover {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     animation: glitch 0.3s infinite alternate;
     position: relative;
+    color: #ff4ddb; /* Vibrant pink */
 }
 
 /* Responsive Design */
