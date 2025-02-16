@@ -100,9 +100,16 @@ nav ul li a {
     letter-spacing: 1px; /* Adds a little spacing between letters */
     color: white; /* Ensure visibility */
 }
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff0000, -2px -2px #00ffea; }
+    50% { text-shadow: -2px -2px #ff0000, 2px 2px #00ffea; }
+    100% { text-shadow: 2px -2px #ff0000, -2px 2px #00ffea; }
+}
 
 nav ul li a:hover {
-    text-decoration: underline wavy;
+    text-decoration: none; /* Remove underline */
+    animation: glitch 0.3s infinite alternate;
+    position: relative;
 }
 
 /* Responsive Design */
