@@ -37,7 +37,7 @@ header {
     border-radius: 8px; /* Slightly rounded corners */
 }
 
-/* Sidebar fixed to the right */
+/* Sidebar fixed to the LEFT*/
 .sidebar {
     position: fixed; /* Keeps it in place while scrolling */
     top: 205px; /* Space from the top */
