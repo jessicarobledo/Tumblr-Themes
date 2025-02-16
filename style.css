@@ -21,6 +21,39 @@ header {
     text-align: center;
 }
 
+/* Layout Styles */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.content {
+    flex: 3; /* Main content takes more space */
+    background-color: rgba(51, 51, 51, 0.624); /* dark gray with opacity */
+    color: #333; /* Dark text color for readability */
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+/* Sidebar fixed to the side */
+.sidebar {
+    position: fixed; /* Keep it in place while scrolling */
+    top: 20px; /* Space from the top */
+    right: 20px; /* Space from the right */
+    width: 250px; /* Adjust width as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity */
+    color: #333; /* Dark text color for readability */
+    padding: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    z-index: 10; /* Keep it above the content */
+}
+
+/* Adjust content to make room for the fixed sidebar */
+.content {
+    margin-right: 270px; /* Leave space for the fixed sidebar */
+}
+
 /* Heading Styles */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;  /* Apply Orbitron to all headings */
@@ -39,28 +72,7 @@ h3 {
     font-size: 2em;  /* Smaller header font size */
 }
 
-/* Layout Styles */
-.container {
-    display: flex;
-    margin: 20px;
-}
 
-.content {
-    flex: 3; /* Main content takes more space */
-    background-color: rgba(51, 51, 51, 0.624); /* dark gray with opacity */
-    color: #333; /* Dark text color for readability */
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 8px; /* Slightly rounded corners */
-}
-
-.sidebar {
-    flex: 1; /* Sidebar takes less space */
-    background-color: rgba(51, 51, 51, 0.624); /* dark gray with opacity */
-    color: #333; /* Dark text color for readability */
-    padding: 20px;
-    border-radius: 8px; /* Slightly rounded corners */
-}
 
 /* Navigation Bar Styling */
 nav ul {
