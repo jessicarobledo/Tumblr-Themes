@@ -189,67 +189,67 @@ nav ul li a:hover {
 </style>
 </head>
 <body>
-    <header>
-        <!-- Blog title and description -->
-        <h1>Delicate Descent</h1> <!-- Blog title -->
-        <p>{Description}</p> <!-- Blog description -->
+    <header class="header">
+        <h1>Digital Ghost's Delicate Descent</h1>
+        <p>{description}</p>
 
-        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/archive">Archive</a></li>
                 <li><a href="/ask">Ask</a></li>
-                <li><a href="/tagged/DigitalGhost">#DigitalGhost</a></li> <!-- Optional, change to actual tag -->
+                <li><a href="/tagged/DigitalGhost">#DigitalGhost</a></li> 
             </ul>
         </nav>
     </header>
     
     <div class="container">
-        <!-- Main content area for posts -->
         <main class="content">
             {block:Posts}
-                {block:Text}
-                    <h2>{Title}</h2> <!-- Post title -->
-                    <p>{Body}</p> <!-- Post content -->
-                {/block:Text}
-                
-                {block:Photo}
-                    <img src="{PhotoURL-500}" alt="{PhotoAlt}"> <!-- Post image -->
-                    <p>{Caption}</p> <!-- Post image caption -->
-                {/block:Photo}
+                <div class="post">
+                    {block:Date}
+                        <p style="font-family: Brush Script MT, cursive; font-size: 25px; color: rgba(255, 182, 193, 0.5);"> {DayOfWeek}, {Month} {DayOfMonth}, {Year}</p> 
+                    {/block:Date}
+                    {block:Text}
+                        <h2>{Title}</h2> 
+                        <p>{Body}
+                    {/block:Text}
+                    
+                    {block:Photo}
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"> 
+                        <p>{Caption}</p>
+                    {/block:Photo}
 
-                {block:Quote}
-                    <blockquote>{Quote}</blockquote> <!-- Post quote -->
-                    <cite>{Source}</cite> <!-- Post quote source -->
-                {/block:Quote}
+                    {block:Quote}
+                        <blockquote>{Quote}</blockquote>
+                        <cite>{Source}</cite> 
+                    {/block:Quote}
 
-                {block:Link}
-                    <a href="{URL}">{Name}</a> <!-- Post link -->
-                    <p>{Description}</p> <!-- Post description -->
-                {/block:Link}
+                    {block:Link}
+                        <a href="{URL}">{Name}</a> 
+                        <p>{Description}</p> 
+                    {/block:Link}
 
-                {block:Audio}
-                    {AudioPlayer} <!-- Post audio -->
-                    <p>{Caption}</p> <!-- Post audio caption -->
-                {/block:Audio}
+                    {block:Audio}
+                        {AudioPlayer} 
+                        <p>{Caption}</p> 
+                    {/block:Audio}
 
-                {block:Video}
-                    {VideoEmbed} <!-- Post video -->
-                    <p>{Caption}</p> <!-- Post video caption -->
-                {/block:Video}
+                    {block:Video}
+                        {VideoEmbed} 
+                        <p>{Caption}</p> 
+                    {/block:Video}
 
-                {block:Date}
-                    <p>Posted on {DayOfWeek}, {Month} {DayOfMonth}, {Year}</p> <!-- Post date -->
-                {/block:Date}
+                    
+                </div>
             {/block:Posts}
         </main>
 
-        <!-- Sidebar for widgets and links -->
+        
         <aside class="sidebar">
             <h3>Digital Ghost</h3>
-            <p>{Description}</p> <!-- Blog description again, or something else -->
-            <img src="{PortraitURL-128}" alt="Avatar"> <!-- Blog avatar -->
+            <p style="font-family: Brush Script MT, cursive; font-size: 20px; color: rgba(255, 182, 193, 0.5);">Caught in the digital ocean as both the wave and the wreckage—I am a glitch, forever debugging myself.</p> 
+            <img src="{PortraitURL-128}" alt="Avatar"> 
 
             <h3 class="hide-section">Links</h3>
             <ul class="hide-section">
@@ -270,5 +270,5 @@ nav ul li a:hover {
         </aside>
     </div>
 </body>
-</html>
 
+</html>
