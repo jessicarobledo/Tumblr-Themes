@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tumblr Theme</title>
+    <title>DigiGhost</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1> My (work in progress) Tumblr Theme!</h1>
-
-        <!-- Navigation Bar -->
+        <h1> Astra Tumblr Theme</h1>
          <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,15 +20,71 @@
     
     <div class="container">
         <main class="content">
-            <h2>Main Content</h2>
-            <p>This is the main area.</p>
+            {block:Posts}
+                <div class="post">
+                    {block:Date}
+                        <p style="font-family: Brush Script MT, cursive; font-size: 25px; color: rgba(255, 182, 193, 0.5);"> {DayOfWeek}, {Month} {DayOfMonth}, {Year}</p> 
+                    {/block:Date}
+                    {block:Text}
+                        <h2>{Title}</h2> 
+                        <p>{Body}
+                    {/block:Text}
+                    
+                    {block:Photo}
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"> 
+                        <p>{Caption}</p>
+                    {/block:Photo}
+
+                    {block:Quote}
+                        <blockquote>{Quote}</blockquote>
+                        <cite>{Source}</cite> 
+                    {/block:Quote}
+
+                    {block:Link}
+                        <a href="{URL}">{Name}</a> 
+                        <p>{Description}</p> 
+                    {/block:Link}
+
+                    {block:Audio}
+                        {AudioPlayer} 
+                        <p>{Caption}</p> 
+                    {/block:Audio}
+
+                    {block:Video}
+                        {VideoEmbed} 
+                        <p>{Caption}</p> 
+                    {/block:Video}
+
+                    
+                </div>
+            {/block:Posts}
         </main>
 
+        
         <aside class="sidebar">
-            <h3>Sidebar</h3>
-            <p>This is where widgets, links, or other content can go.</p>
+            <h3>Digital Ghost</h3>
+            <p style="font-family: Brush Script MT, cursive; font-size: 20px; color: rgba(255, 182, 193, 0.5);">Caught in the digital ocean as both the wave and the wreckage—I am a glitch, forever debugging myself.</p> 
+            <img src="{PortraitURL-128}" alt="Avatar"> 
+
+            <h3 class="hide-section">Links</h3>
+            <ul class="hide-section">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/archive">Archive</a></li>
+                <li><a href="/ask">Ask</a></li>
+            </ul>
+
+            <h3 class="hide-section">Recent Posts</h3>
+            {block:RecentPosts}
+                <ul class="hide-section">
+                    {block:Post}
+                        <li><a href="{Permalink}">{ShortURL}</a></li>
+                    {/block:Post}
+                </ul>
+            {/block:RecentPosts}
         </aside>
     </div>
 </body>
+
 </html>
 
