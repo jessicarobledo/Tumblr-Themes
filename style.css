@@ -1,86 +1,128 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Orbitron:wght@400;700&display=swap');
 
-/* General Styles */
 body {
     font-family: 'Lato', sans-serif;
     background: url('https://raw.githubusercontent.com/jessicarobledo/Tumblr-Themes/main/assets/astra-robot.jpg?raw=true') 
                 no-repeat center center fixed;
     background-size: cover;
-    background-color: #3d2a4d; /* Dark ashy purple fallback */
-    color: white; /* Text color */
+    background-color: #3d2a4d; 
+    color: rgba(255, 182, 193, 0.08); 
     margin: 0;
     padding: 0;
 }
 
-/* Header Styles */
-header {
-    background-color: rgba(51, 51, 51, 0.624); /* dark gray with opacity */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
+.hide-section {
+    display: none;
 }
 
-/* Layout Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.624); 
+    color: rgba(255, 182, 193, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+
 .container {
     display: flex;
     margin: 20px;
 }
 
 .content {
-    flex: 3; /* Main content takes more space */
-    background-color: rgba(51, 51, 51, 0.624); /* dark gray with opacity */
-    color: white; /* Text color  */
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 8px; /* Slightly rounded corners */
+    flex: 3; 
+    background-color: rgba(51, 51, 51, 0.624); 
+    color: white; 
+    padding: 50px; 
+    margin-left: 400px;
+    margin-right: 0px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.001); 
 }
 
-/* Sidebar fixed to the LEFT*/
 .sidebar {
-    position: fixed; /* Keeps it in place while scrolling */
-    top: 205px; /* Space from the top */
-    left: 20px; /* Moves it to the left */
-    width: 200px; /* Adjust width as needed */
-    background-color: rgba(51, 51, 51, 0.624); /* Dark gray with opacity */
-    color: white; /* Light teXt for better readability */
+    position: fixed; 
+    top: 240px; 
+    left: 20px; 
+    width: 300px; 
+    background-color: rgba(51, 51, 51, 0.624); 
+    color: rgba(255, 182, 193, 0.6); 
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    z-index: 10; /* Keeps it above the content */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.001);
+    z-index: 10; /
 }
 
-/* Adjust main content to make room for sidebar */
-.content {
-    margin-left: 270px; /* Ensures content is aligned nicely */
-    margin-right: 0px; /* Leaves space for the sidebar */
-    background-color: rgba(51, 51, 51, 0.624); /* Dark gray with opacity */
-    color: white; /* Light text for readability */
-    padding: 20px;
-    border-radius: 8px; /* Match the sidebar */
+.post {
+    background-color: rgba(255, 182, 193, 0.001);
+    padding: 100px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.001); 
+    margin-bottom: 20px; 
+    box-sizing: border-box;
 }
 
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;  /* Apply Orbitron to all headings */
-    color: #fff;  /* White text color for headers */
-}
-
-h1 {
-    font-size: 3em;  /* Main title font size */
-}
-
-h2 {
-    font-size: 2.5em;  /* Subtitle font size */
-}
-
-h3 {
-    font-size: 2em;  /* Smaller header font size */
+.post img {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 
+header h1, header h2, header h3, header h4, header h5, header h6 {
+    font-family: 'Orbitron', sans-serif;  
+    color: rgba(255, 182, 193, 0.2);
+}
 
-/* Navigation Bar Styling */
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: 3em;
+}
+
+header h3 {
+    font-size: 2.5em;
+}
+
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 182, 193, 0.5);
+}
+
+.content h1 {
+    font-size: 3em;
+}
+
+.content h2 {
+    font-size: 2.5em;
+}
+
+.content h3 {
+    font-size: 2em;
+}
+
+
+.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 182, 193, 0.2);
+}
+
+.sidebar h1 {
+    font-size: 2.5em;
+}
+
+.sidebar h2 {
+    font-size: 2em;
+}
+
+.sidebar h3 {
+    font-size: 1.5em;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -94,30 +136,37 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'Orbitron', sans-serif; /* Change to your preferred font */
-    font-size: 16px; /* Adjust size if needed */
-    font-weight: bold; /* Make it bold if desired */
-    letter-spacing: 1px; /* Adds a little spacing between letters */
-    text-decoration: none; /* Removes the underline */
-    color: white; /* Ensure visibility */
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    text-decoration: none; 
+    color: rgba(137, 96, 143, 0.6);/
 }
+
+
 @keyframes glitch {
-    0% { text-shadow: 3px 3px rgb(255, 77, 219), -3px -3px rgb(0, 234, 255); }
-    50% { text-shadow: -3px -3px rgb(255, 77, 219), 3px 3px rgb(0, 234, 255); }
-    100% { text-shadow: 3px -3px rgb(255, 77, 219), -3px 3px rgb(0, 234, 255); }
+    0% {
+        text-shadow: 3px 3px rgba(137, 96, 143, 0.6), -3px -3px rgba(255, 191, 200, 0.6);
+    }
+    50% {
+        text-shadow: -3px -3px rgba(137, 96, 143, 0.6), 3px 3px rgba(255, 191, 200, 0.6);
+    }
+    100% {
+        text-shadow: 3px -3px rgba(137, 96, 143, 0.6), -3px 3px rgba(255, 191, 200, 0.6);
+    }
 }
 
 nav ul li a:hover {
     text-decoration: none;
     animation: glitch 0.3s infinite alternate;
     position: relative;
-    color: rgb(255, 77, 219); /* Default text color */
+    color: rgb(255, 77, 219); 
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack content and sidebar on smaller screens */
+        flex-direction: column; 
     }
 
     .content {
